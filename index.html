@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2023년 버킷리스트</title>
+    <style>
+        /* 꾸미기 태그 */
+        @import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&display=swap');
+        * {
+            font-family: 'Nanum Myeongjo', serif;
+            
+        }
+        .title {
+            /* title 명찰 지정 */
+            color: white;
+            background-color: tomato;
+            font-size: 24px;
+            padding: 4px 14px;
+            /* 여백 첫번째가 위아래 두번째가 양옆에 */
+            border-radius: 8px;
+            /* 테두리 둥글게 만드는 코드 */
+        }
+
+        .bg {
+            width: 360PX;
+            background-image: url("https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/bucketList/bg-grid.png");
+        }
+
+        .msg {
+            font-weight: bold;
+        }
+
+        .bucket {
+            /* bucket랑 img랑 따로따로 가능한듯! */
+            width: 160px;
+            height: 160px;
+        }
+
+        .img1 {
+            background-image: url("https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/bucketList/bucket-red.png");
+            background-size: cover;
+            background-position: center;
+        }
+
+        .img2 {
+            background-image: url("https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/bucketList/bucket-lightred.png");
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+    <link rel="stylesheet" type="text/css" href="https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/bucketList/sparta-bucket2.css">
+    </head>
+
+<body class="bg center">
+    <h1 class="title">2023 신년계획</h1>
+    <!-- 여기서 class는 일종의 '명찰' 역할. 
+        만약 짱구의 바지를 초록색으로 바꾸고 싶다면 '짱구의 바지' 를 
+        지칭하는 명찰이 있어야함 -->
+    <!-- h1태그는 제목 부분을 담당하는 태그 -->
+    <p class="msg"> 몸도 마음도 건강하기!! </p>
+    <div class="row flex-row wrap">
+        <!-- 큰 div 박스 하나가 작은 div 박스 6개를 감싸묶고있는 상태 -->
+        <!-- shift + alt +f 깔끔하게 문단정리 -->
+        <div class="bucket img1 center">10kg 감량</div>
+        <div class="bucket img2 center">나꼬쌤 자바스크립트 챌린지 성공</div>
+        <div class="bucket img2 center">토익 700점 달성</div>
+        <div class="bucket img1 center">정보처리기사 실기 합격</div>
+        <div class="bucket img1 center">학자금 대출 갚기</div>
+        <div class="bucket img2 center">정기검사 모두 통과</div>
+    </div>
+
+</body>
+
+</html>
